@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why Zoos Should Be Prohibited</title>
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #222;
+      --card: #fff;
+      --header: #2e7d32;
+      --footer: #1b5e20;
+      --link: #81c784;
+      --button: #388e3c;
+    }
+
+    body.dark-mode {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --card: #1e1e1e;
+      --header: #004d40;
+      --footer: #00352c;
+      --link: #90caf9;
+      --button: #00695c;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: 0.3s ease;
+    }
+
+    header {
+      background-color: var(--header);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: var(--card);
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+      transition: 0.2s ease;
+    }
+
+    button {
+      background-color: var(--button);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background-color: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .small {
+      font-size: 0.85em;
+      color: #ccc;
+      margin-top: 15px;
+    }
+
+    .toggle-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid var(--button);
+    }
+
+    #success-message {
+      display: none;
+      padding: 15px;
+      background: #c8e6c9;
+      color: #2e7d32;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Why Zoos Should Be Prohibited</h1>
+</header>
+
+<main>
+  <div class="toggle-container">
+    <button onclick="toggleDarkMode()">🌙 Toggle Light/Dark Mode</button>
+  </div>
+
+  <div class="section">
+    <p>Zoos should be prohibited because they cause injury to animals, ruin natural habitats, and fail to provide actual educational advantages. Even though zoos claim to aid conservation activities as well as educate individuals, the reality is generally different. Instead of helping animals, zoos can potentially make their lives worse, and there are better ways of protecting wildlife.</p>
+  </div>
+
+  <div class="section">
+    <p>There are many good reasons zoos need to be outlawed, but one of the primary reasons is the unethical treatment of animals. Several animals are housed in small enclosures which do not reflect their natural environment. Such enclosures are usually too small for animals to move around or act naturally, and this results in causing them stress, boredom, and even mental illness. Elephants, for example, in the wild will travel large distances, but in zoos they fret and develop habits such as running back and forth, a very telltale sign of poor mental health.</p>
+  </div>
+
+  <div class="section">
+    <p>Another problem with zoos is that they result in unnatural interference with natural environments. To take animals in, their habitats are destroyed and animals are pulled out of the wild. This harms not only the animals but also the ecosystem where they previously lived. Preventing animals from their natural habitats can destabilize the social life of species, rendering it harder for them to survive. At times, the captured animals are already endangered, and taking them away from their habitats only makes the situation worse.</p>
+  </div>
+
+  <div class="section">
+    <p>Zoos also do not practice serious education. Although they profess to educate humans about animals, zoos typically offer an unsavory perspective of wild animals. Animals are typically not acting naturally in zoos since they are stressed or ill. Tourists might believe that they are learning about these animals' natural habits but are actually only observing them in unnatural habitats. Besides, zoos scarcely inform visitors about real threats animals must live with such as habitat destruction.</p>
+  </div>
+
+  <div class="section">
+    <p>In summary, zoos should be banned since they treat animals poorly, destroy homes and fail to provide genuine education. What we should be doing instead is funding wildlife sanctuaries and employing technology to observe animals in the wild. The well-being of animals has to take priority and there are ways to keep them safe other than using captivity.</p>
+  </div>
+
+  <div class="section">
+    <button onclick="toggleCitation()">📚 Show/Hide Citation</button>
+    <div id="citation" class="hidden">
+      <p><strong>Reference:</strong><br>
+        Draven, J. (2017, May 31). <em>Hot topic: is it time for zoos to be banned?</em> Travel.  
+        <a href="https://www.nationalgeographic.com/travel/article/hot-topic-is-it-time-for-zoos-to-be-banned" target="_blank">
+          https://www.nationalgeographic.com/travel/article/hot-topic-is-it-time-for-zoos-to-be-banned
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📩 Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/movdrzyd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="success-message">✅ Your message was sent successfully. Thank you!</div>
+  </div>
+</main>
+
+<footer>
+  <p>Direct Contact: <a href="mailto:yasin0911@web.de">yasin0911@web.de</a> | <a href="tel:+491722557039">+49 172 2557039</a></p>
+  <p>📍 <a href="https://www.google.com/maps/place/Behringweg+3,+31737+Rinteln,+Germany" target="_blank">Behringweg 3, Rinteln 31737, Niedersachsen, Deutschland</a></p>
+  <p><a href="privacy.html" target="_blank">🔐 Privacy Policy</a></p>
+  <div class="small">© 2025 Yasin | All rights reserved.</div>
+</footer>
+
+<script>
+  function toggleCitation() {
+    document.getElementById("citation").classList.toggle("hidden");
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+
+  // Form confirmation handler
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    }).then(response => {
+      if (response.ok) {
+        document.getElementById("success-message").style.display = "block";
+        form.reset();
+      } else {
+        alert("There was a problem submitting the form. Please try again.");
+      }
+    }).catch(error => {
+      alert("Error: " + error.message);
+    });
+  });
+</script>
+
+</body>
+</html>
